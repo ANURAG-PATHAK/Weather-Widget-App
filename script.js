@@ -12,9 +12,8 @@ async function checkWeather(city) {
         document.querySelector(".weather").style.display = "none";
     } else {
         var data = await response.json();
-        console.log(data);
         document.querySelector(".city").innerText = data.name;
-        document.querySelector(".temp").innerText = data.main.temp + "°C";
+        document.querySelector(".temp").innerText = Math.round(data.main.temp) + "°C";
         document.querySelector(".humidity").innerText = data.main.humidity + "%";
         document.querySelector(".wind").innerText = data.wind.speed + "km/h";
         switch (data.weather[0].main) {

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Weather Application
 
 This is a simple weather application that allows users to search for the current weather in a specific city.
